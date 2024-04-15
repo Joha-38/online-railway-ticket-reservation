@@ -11,10 +11,6 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author recklaw07
- */
 public class Register extends javax.swing.JFrame {
 
     /**

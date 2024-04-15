@@ -15,10 +15,6 @@ import java.awt.Graphics;
 import java.awt.PrintJob;
 import java.awt.Toolkit;
 
-/**
- *
- * @author recklaw07
- */
 public class Ticket extends javax.swing.JFrame {
 
     /**

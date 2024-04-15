@@ -13,10 +13,7 @@ import java.awt.event.MouseEvent;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import javax.swing.JOptionPane;
-/**
- *
- * @author recklaw07
- */
+
 public class Login extends javax.swing.JFrame {
     public static int user;
     public static Dictionary station=new Hashtable();

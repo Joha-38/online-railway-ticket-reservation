@@ -8,10 +8,6 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author recklaw07
- */
 public class Forgpass extends javax.swing.JFrame {
 
     /**

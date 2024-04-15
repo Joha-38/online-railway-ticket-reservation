@@ -10,10 +10,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author macbookair
- */
+
 public class ContactUs extends javax.swing.JFrame {
 
     /**

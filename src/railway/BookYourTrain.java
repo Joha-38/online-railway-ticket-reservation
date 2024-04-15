@@ -13,10 +13,7 @@ import java.sql.ResultSet;
 import static railway.Login.bid;
 import static railway.Login.trainno;
 
-/**
- *
- * @author macbookair
- */
+
 public class BookYourTrain extends javax.swing.JFrame {
 
     /**
