@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package railway;
 
 import java.sql.DriverManager;
@@ -17,9 +13,6 @@ import static railway.Login.to;
 
 public class search extends javax.swing.JFrame {
 
-    /**
-     * Creates new form search
-     */
     public search() {
         station.put("Ernakulam (ERS)", "ERS");
         station.put("Trivandrum (TVC)","TVC");
@@ -31,7 +24,7 @@ public class search extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -54,11 +47,11 @@ public class search extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("SEARCH");
 
-        jLabel1.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); 
         jLabel1.setText("SEARCH");
 
         tab.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        tab.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        tab.setFont(new java.awt.Font("Segoe UI", 0, 22)); 
         tab.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -88,16 +81,16 @@ public class search extends javax.swing.JFrame {
         }
         tab.setRowHeight(tab.getRowHeight() + 15);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         jLabel2.setText("From Station: ");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         jLabel3.setText("To Station: ");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         jLabel4.setText("Date: ");
 
-        froms.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        froms.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         froms.setMaximumRowCount(10);
         froms.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ernakulam (ERS)", "Trivandrum (TVC)", "Calicut (CLT)", "Kannur (CAN)", "Shornur (SRR)", "Thrissur (TCR)" }));
         froms.setToolTipText("");
@@ -108,10 +101,10 @@ public class search extends javax.swing.JFrame {
             }
         });
 
-        tos.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tos.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         tos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ernakulam (ERS)", "Trivandrum (TVC)", "Calicut (CLT)", "Kannur (CAN)", "Shornur (SRR)", "Thrissur (TCR)" }));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         jButton1.setText("SUBMIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -264,9 +257,9 @@ public class search extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String fro=(String) froms.getSelectedItem();
         String t=(String) tos.getSelectedItem();
         from=(String) station.get(fro);
@@ -322,42 +315,37 @@ public class search extends javax.swing.JFrame {
             
         }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
-    private void but1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but1ActionPerformed
+    private void but1ActionPerformed(java.awt.event.ActionEvent evt) {
         Login.trainno=(int)tab.getModel().getValueAt(0,0);
         Login.trainname=(String)tab.getModel().getValueAt(0,1);
         dispose();
         new BookYourTrain().setVisible(true);
-    }//GEN-LAST:event_but1ActionPerformed
+    }
 
-    private void but2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but2ActionPerformed
+    private void but2ActionPerformed(java.awt.event.ActionEvent evt) {
         Login.trainno=(int)tab.getModel().getValueAt(1,0);
         Login.trainname=(String)tab.getModel().getValueAt(1,1);
         dispose();
         new BookYourTrain().setVisible(true);
-    }//GEN-LAST:event_but2ActionPerformed
+    }
 
-    private void but3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but3ActionPerformed
+    private void but3ActionPerformed(java.awt.event.ActionEvent evt) {
         Login.trainno=(int)tab.getModel().getValueAt(2,0);
         Login.trainname=(String)tab.getModel().getValueAt(2,1);
         dispose();
         new BookYourTrain().setVisible(true);
-    }//GEN-LAST:event_but3ActionPerformed
+    }
 
-    private void fromsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fromsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fromsActionPerformed
+    private void fromsActionPerformed(java.awt.event.ActionEvent evt) {
+        
+    }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
+       
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -374,9 +362,9 @@ public class search extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(search.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
+        
 
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new search().setVisible(true);
@@ -384,7 +372,7 @@ public class search extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton but1;
     private javax.swing.JButton but2;
     private javax.swing.JButton but3;
@@ -401,5 +389,5 @@ public class search extends javax.swing.JFrame {
     private javax.swing.JPanel panel3;
     private javax.swing.JTable tab;
     private javax.swing.JComboBox<String> tos;
-    // End of variables declaration//GEN-END:variables
+    
 }
